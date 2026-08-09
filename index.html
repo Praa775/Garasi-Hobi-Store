@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Garasi Hobi Store</title>
+
+  <meta name="description"
+        content="Garasi Hobi Store — koleksi pilihan untuk para pecinta hobi.">
+
+  <meta name="theme-color" content="#06101d">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+  <a href="#" class="logo">
+
+    <div class="logo-img">
+      <img
+        src="https://files.catbox.moe/tuov8o.jpg"
+        alt="Garasi Hobi Store">
+    </div>
+
+    <div class="logo-text">
+      <strong>GARASI HOBI</strong>
+      <small>STORE</small>
+    </div>
+
+  </a>
+
+  <nav>
+    <a href="#produk">
+      <i class="fa-solid fa-store"></i>
+      Produk
+    </a>
+
+    <a href="#tentang">
+      <i class="fa-solid fa-circle-info"></i>
+      Tentang
+    </a>
+
+    <a href="#kontak">
+      <i class="fa-solid fa-headset"></i>
+      Admin
+    </a>
+  </nav>
+
+  <button class="cart-button" id="cartButton">
+    <i class="fa-solid fa-bag-shopping"></i>
+    <span id="cartCount">0</span>
+  </button>
+
+</header>
+
+
+<section class="hero">
+
+  <div class="hero-grid"></div>
+
+  <div class="hero-content">
+
+    <div class="hero-label">
+      <span></span>
+      GARASI HOBI STORE
+    </div>
+
+    <h1>
+      Temukan barang
+      <br>
+      <em>yang cocok</em>
+      untuk hobimu.
+    </h1>
+
+    <p>
+      Koleksi pilihan dengan pengalaman belanja
+      modern, simpel, dan premium.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="#produk" class="btn-primary">
+        <i class="fa-solid fa-bag-shopping"></i>
+        Lihat Produk
+      </a>
+
+      <a href="#kontak" class="btn-secondary">
+        <i class="fa-brands fa-whatsapp"></i>
+        Hubungi Admin
+      </a>
+
+    </div>
+
+    <div class="stats">
+
+      <div>
+        <strong id="productCount">0</strong>
+        <small>PRODUK</small>
+      </div>
+
+      <div>
+        <strong>100%</strong>
+        <small>PILIHAN</small>
+      </div>
+
+      <div>
+        <strong>FAST</strong>
+        <small>RESPONSE</small>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="hero-card">
+
+    <img
+      src="https://files.catbox.moe/tuov8o.jpg"
+      alt="Garasi Hobi">
+
+    <div class="hero-card-overlay"></div>
+
+    <div class="hero-card-content">
+
+      <small>GARASI HOBI</small>
+
+      <h3>
+        HOBI.
+        <br>
+        KOLEKSI.
+        <br>
+        GAYA.
+      </h3>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<main>
+
+<section class="products-section" id="produk">
+
+  <div class="section-header">
+
+    <div>
+
+      <span>COLLECTION</span>
+
+      <h2>
+        Produk pilihan
+      </h2>
+
+      <p>
+        Temukan produk yang cocok untuk koleksimu.
+      </p>
+
+    </div>
+
+
+    <div class="tools">
+
+      <div class="search">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Cari produk...">
+
+      </div>
+
+
+      <select id="categorySelect">
+
+        <option value="all">
+          Semua kategori
+        </option>
+
+      </select>
+
+    </div>
+
+  </div>
+
+
+  <div
+    class="categories"
+    id="categories">
+  </div>
+
+
+  <div
+    class="product-grid"
+    id="productGrid">
+  </div>
+
+
+  <div
+    class="empty"
+    id="empty"
+    hidden>
+
+    <i class="fa-solid fa-box-open"></i>
+
+    <h3>
+      Produk tidak ditemukan
+    </h3>
+
+    <p>
+      Coba cari menggunakan kata kunci lain.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class="about-section" id="tentang">
+
+  <div class="about-card">
+
+    <div class="about-icon">
+      <i class="fa-solid fa-star"></i>
+    </div>
+
+    <div>
+
+      <span>WHY GARASI HOBI</span>
+
+      <h2>
+        Dibuat untuk yang suka koleksi.
+      </h2>
+
+      <p>
+        Garasi Hobi Store menghadirkan tempat belanja
+        dengan tampilan clean, modern, dan premium
+        untuk para pecinta hobi.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="features">
+
+    <div>
+
+      <i class="fa-solid fa-shield-halved"></i>
+
+      <div>
+        <strong>Belanja nyaman</strong>
+        <small>Informasi produk jelas</small>
+      </div>
+
+    </div>
+
+
+    <div>
+
+      <i class="fa-solid fa-bolt"></i>
+
+      <div>
+        <strong>Respons cepat</strong>
+        <small>Admin siap membantu</small>
+      </div>
+
+    </div>
+
+
+    <div>
+
+      <i class="fa-solid fa-gem"></i>
+
+      <div>
+        <strong>Pilihan premium</strong>
+        <small>Kurasi untuk hobi</small>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="contact-section" id="kontak">
+
+  <span>NEED HELP?</span>
+
+  <h2>
+    Butuh bantuan memilih produk?
+  </h2>
+
+  <p>
+    Tanyakan stok, detail, harga, atau cara order
+    langsung kepada admin Garasi Hobi Store.
+  </p>
+
+  <a
+    id="whatsappButton"
+    href="#"
+    target="_blank"
+    class="whatsapp-button">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+    Chat Admin WhatsApp
+
+  </a>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  <div class="footer-brand">
+
+    <strong>
+      GARASI HOBI
+    </strong>
+
+    <small>
+      STORE
+    </small>
+
+  </div>
+
+
+  <p>
+    © <span id="year"></span>
+    Garasi Hobi Store
+  </p>
+
+
+  <div class="social">
+
+    <a
+      id="tiktokLink"
+      href="#"
+      target="_blank">
+
+      <i class="fa-brands fa-tiktok"></i>
+
+      TikTok
+
+    </a>
+
+
+    <a
+      id="instagramLink"
+      href="#"
+      target="_blank">
+
+      <i class="fa-brands fa-instagram"></i>
+
+      Instagram
+
+    </a>
+
+  </div>
+
+</footer>
+
+
+<!-- CART -->
+
+<div
+  class="cart-overlay"
+  id="cartOverlay">
+
+  <div
+    class="cart-backdrop"
+    id="cartBackdrop">
+  </div>
+
+  <aside class="cart-panel">
+
+    <div class="cart-header">
+
+      <div>
+
+        <span>YOUR LIST</span>
+
+        <h3>
+          Keranjang
+        </h3>
+
+      </div>
+
+      <button id="closeCart">
+
+        <i class="fa-solid fa-xmark"></i>
+
+      </button>
+
+    </div>
+
+
+    <div
+      class="cart-items"
+      id="cartItems">
+    </div>
+
+
+    <div class="cart-footer">
+
+      <div class="total">
+
+        <span>Total</span>
+
+        <strong id="cartTotal">
+          Rp0
+        </strong>
+
+      </div>
+
+
+      <button
+        id="checkoutButton"
+        class="checkout">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+        Order via WhatsApp
+
+      </button>
+
+    </div>
+
+  </aside>
+
+</div>
+
+
+<div
+  class="toast"
+  id="toast">
+
+  <i class="fa-solid fa-check"></i>
+
+  <span></span>
+
+</div>
+
+
+<script src="shop.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
