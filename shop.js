@@ -29,7 +29,7 @@ const PRODUCTS = [
     id: 3,
     name: "SHOCK BREAKER TABUNG VND AK111",
     category: "Onderdil",
-    price: 570350,
+    price: 1895000,
     image: "https://files.catbox.moe/bvrpu9.jpg",
     link: "https://vt.tokopedia.com/t/ZS9h7v1CFBhR3-nFjz8/",
     description: "KLIK REBON SIZE 280/320/340MM Grey tabung merah, Size 320"
